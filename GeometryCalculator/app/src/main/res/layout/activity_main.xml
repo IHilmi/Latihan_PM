@@ -19,7 +19,8 @@
         android:layout_below="@id/geometry"
         android:layout_alignParentRight="true"
         android:layout_width="150dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
     <TextView
         android:id="@+id/txt1"
         android:layout_below="@id/geometry"
@@ -35,7 +36,8 @@
         android:layout_below="@id/input1"
         android:layout_alignParentRight="true"
         android:layout_width="150dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
     <TextView
         android:id="@+id/txt2"
         android:layout_below="@id/input1"
@@ -55,6 +57,7 @@
         android:onClick="calculate" />
     <TextView
         android:id="@+id/result"
+        android:layout_below="@+id/btn_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </RelativeLayout>
