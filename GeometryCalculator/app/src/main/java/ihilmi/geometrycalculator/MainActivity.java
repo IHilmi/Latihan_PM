@@ -30,11 +30,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         String operator = spinner.getSelectedItem().toString();
         String hasil = "";
-        double inp1 = Double.parseDouble(input1.getText().toString());
-        double inp2 = Double.parseDouble(input2.getText().toString());
+
 
         if(input2.isEnabled()){
-            inp2 = Double.parseDouble(input2.getText().toString())
+            inp2 = Double.parseDouble(input2.getText().toString());
         }
 
         if(operator.equalsIgnoreCase("Lingkaran")){
