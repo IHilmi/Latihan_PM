@@ -43,9 +43,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             hasil = "Luas dari SegiTiga adalah : " +((inp1*inp2)*0.5)+"\n";
             double hyp = Math.sqrt((inp1*inp1)+(inp2*inp2));
             hasil += "Keliling dari SegiTiga adalah : " +(inp1+inp2+hyp);
-        }else {
+        }else if (operator.equalsIgnoreCase("Persegi")){
             hasil = "Luas dari Persegi adalah : " +(inp1*inp2)+"\n";
             hasil += "Keliling dari Persegi adalah : " +((2*inp1)+(2*inp2));
+        }
+        else if (operator.equalsIgnoreCase("Bola")){
+            hasil = "Luas dari Bola adalah : " +(inp1*inp2)+"\n";
+            hasil += "Keliling dari Bola adalah : " +((2*inp1)+(2*inp2));
+        }
+        else {
+            hasil = "Luas dari Balok adalah : " +(inp1*inp2)+"\n";
+            hasil += "Keliling dari Balok adalah : " +((2*inp1)+(2*inp2));
         }
         TextView result = (TextView) findViewById(R.id.result);
         result.setText(hasil);
@@ -66,7 +74,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             text1.setText("Alas");
             text2.setText("Tinggi");
             input2.setEnabled(true);
-        }else{
+        }else if (operator.equalsIgnoreCase("Persegi")){
+            text1.setText("Panjang");
+            text2.setText("Lebar");
+            input2.setEnabled(true);
+        }
+        else if (operator.equalsIgnoreCase("Bola")){
+            text1.setText("Alas");
+            text2.setText("Tinggi");
+            input2.setEnabled(true);
+        }
+        else{
             text1.setText("Panjang");
             text2.setText("Lebar");
             input2.setEnabled(true);
