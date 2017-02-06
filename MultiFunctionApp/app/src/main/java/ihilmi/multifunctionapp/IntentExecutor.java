@@ -46,7 +46,7 @@ public class IntentExecutor extends AppCompatActivity {
         } else if (operator.equals("Map")) {
             // Script untuk membuka peta
             Uri gmmIntentUri = Uri.parse("geo:" + exec);
-            exeIntent = new Intent(Intent.ACTION_DIAL, gmmIntentUri);
+            exeIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
         }
         startActivity(exeIntent);
     }

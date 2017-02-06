@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ihilmi.tipscalculator.MainActivity">
+
+    <TextView
+        android:id="@+id/Tagihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tagihan"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/inputTagihan"
+        android:layout_below="@+id/Tagihan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/inputPersenTip"
+        android:layout_below="@+id/inputTagihan"
+        android:layout_alignRight="@+id/inputTagihan"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/persenTip"
+        android:layout_below="@+id/inputTagihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persen Tip"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/inputPersenTip"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:layout_alignRight="@+id/inputPersenTip"
+        android:layout_below="@+id/inputTagihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="%"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/inputPersenTip"
+        android:gravity="center_vertical"/>
+    <EditText
+        android:id="@+id/inputJml"
+        android:layout_below="@+id/inputPersenTip"
+        android:layout_alignRight="@+id/inputPersenTip"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/Jml"
+        android:layout_below="@+id/persenTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Orang"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@id/inputJml"
+        android:gravity="center_vertical"/>
+    <Button
+        android:id="@+id/Hitung"
+        android:layout_below="@+id/inputJml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HITUNG"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:onClick="hitung"
+        android:background="#000000"
+        android:allowUndo="false" />
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@+id/Hitung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
